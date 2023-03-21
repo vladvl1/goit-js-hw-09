@@ -13,9 +13,8 @@ function createPromise(position, delay) {
       
       if (shouldResolve) {
         resolve({ position, delay });
-      } else {
+      } 
         reject({ position, delay });
-      }
     }, delay);
   });
 }
